@@ -5,9 +5,49 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #f1e6dc;
+  --text-blue: #36405e;
+  --accent-red: #a23c2e;
+  --logo-green: #94a947;
+}
+body {
+  background-color: var(--bg-color);
+}
+/*text styles*/
 h1 {
   font-family: "pulpo-rust-75", serif;
 }
+h2 {
+  font-family: "pulpo-rust-75", serif;
+  font-size: clamp(1.875rem, 1.4583rem + 1.7778vw, 3.125rem);
+}
+h3 {
+  font-family: "pulpo-rust-75", serif;
+  font-size: clamp(1.875rem, 1.6667rem + 0.8889vw, 2.5rem);
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
+  font-weight: 600;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 0.9583rem + 0.1778vw, 1.125rem);
+  font-weight: 400;
+}
+
 a {
   font-family: "Montserrat", sans-serif;
+}
+nav ul {
+  font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
+  font-weight: 500;
+  color: var(--accent-red);
 }
