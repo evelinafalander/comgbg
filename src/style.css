@@ -13,41 +13,73 @@
 }
 body {
   background-color: var(--bg-color);
+  background-image: url(svg/Rectangle.svg);
 }
 /*text styles*/
 h1 {
   font-family: "pulpo-rust-75", serif;
+  color: var(--accent-red);
+  font-size: clamp(1.5625rem, 0.7292rem + 3.5556vw, 4.0625rem);
 }
 h2 {
   font-family: "pulpo-rust-75", serif;
   font-size: clamp(1.875rem, 1.4583rem + 1.7778vw, 3.125rem);
+  color: var(--accent-red);
 }
 h3 {
   font-family: "pulpo-rust-75", serif;
   font-size: clamp(1.875rem, 1.6667rem + 0.8889vw, 2.5rem);
+  color: var(--accent-red);
 }
 h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
+  color: var(--text-blue);
 }
 
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
   font-weight: 600;
+  color: var(--text-blue);
 }
 p {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1rem, 0.9583rem + 0.1778vw, 1.125rem);
   font-weight: 400;
+  color: var(--text-blue);
 }
 
 a {
   font-family: "Montserrat", sans-serif;
 }
+a:hover {
+  color: var(--accent-red);
+}
+
+li a:hover {
+  border-bottom: 2px solid;
+  border-color: var(--accent-red);
+  transition: 150ms ease-in-out;
+}
 nav ul {
   font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
   font-weight: 500;
   color: var(--accent-red);
+}
+.mina-ord {
+  font-family: "pulpo-rust-25", serif;
+  font-size: clamp(1.875rem, 1.6667rem + 0.8889vw, 2.5rem);
+  line-height: 1;
+}
+.flip {
+  transform: rotate(-90deg);
+}
+.flip-right {
+  transform: rotate(90deg);
+}
+
+.my-bg-hov:hover {
+  background-color: #edbd40;
 }
