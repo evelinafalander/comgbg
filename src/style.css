@@ -84,3 +84,6 @@ nav ul {
   border-color: #36405e;
   color: #36405e;
 }
+path:hover {
+  fill: #a23c2e;
+}
