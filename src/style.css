@@ -87,3 +87,8 @@ nav ul {
 path:hover {
   fill: #a23c2e;
 }
+@media screen and (min-width: 1024px) {
+  .hide {
+    display: none;
+  }
+}
