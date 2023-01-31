@@ -87,8 +87,7 @@ nav ul {
 }
 
 .my-bg-hov:hover {
-  border-color: #36405e;
-  color: #36405e;
+  background-color: #a23c2e;
 }
 path:hover {
   fill: #a23c2e;
