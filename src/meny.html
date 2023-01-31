@@ -17,7 +17,7 @@
     <link rel="icon" type="image/x-icon" href="svg/logo-com.svg" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="">
     <header class="grid">
       <a class="place-self-center" href="index.html">
         <img class="w-24 py-6 lg:w-32" src="svg/logo-com.svg" alt="logo"
@@ -36,10 +36,20 @@
         </ul>
       </nav>
     </header>
-    <main class="">
-      <img src="svg/meny.svg" alt="meny" />
+    <main class="paper-bg mt-10 md:mb-10">
+      <img
+        class="mobilmeny pt-5 pb-5"
+        src="svg/kvall-mobil.svg"
+        alt="kvällsmeny"
+      />
+
+      <img
+        class="hidden px-10 pt-10 pb-10 md:flex"
+        src="svg/kvallmeny.svg"
+        alt="kvällsmeny"
+      />
     </main>
-    <footer>
+    <footer id="dryck">
       <div class="py-10 pl-10 lg:flex lg:justify-evenly">
         <div class="pb-5">
           <h4 class="pb-2">Adress</h4>

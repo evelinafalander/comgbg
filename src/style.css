@@ -15,6 +15,11 @@ body {
   background-color: var(--bg-color);
   background-image: url(svg/Rectangle.svg);
 }
+/*paper background*/
+.paper-bg {
+  background-image: url(img/bg-paper.webp);
+  background-size: cover;
+}
 /*text styles*/
 h1 {
   font-family: "pulpo-rust-75", serif;
@@ -50,7 +55,7 @@ p {
   font-weight: 400;
   color: var(--text-blue);
 }
-
+/*Links*/
 a {
   font-family: "Montserrat", sans-serif;
 }
@@ -68,6 +73,7 @@ nav ul {
   font-weight: 500;
   color: var(--accent-red);
 }
+/*classes*/
 .mina-ord {
   font-family: "pulpo-rust-25", serif;
   font-size: clamp(1.875rem, 1.6667rem + 0.8889vw, 2.5rem);
@@ -87,8 +93,23 @@ nav ul {
 path:hover {
   fill: #a23c2e;
 }
+
+/*media queries for desktop*/
 @media screen and (min-width: 1024px) {
   .hide {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobilmeny {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .paper-bg {
+    background-image: url(img/bg-mobile.webp);
+    background-size: fill;
   }
 }
