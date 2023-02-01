@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       cursor: {
-        mincursor: "url(svg/rod-hat.svg) 20 20, pointer",
-        hovercursor: "url(svg/hat-pek.svg) 20 20, pointer",
+        mincursor: "url(svg/my-hat2.svg) 20 20, pointer",
+        hovercursor: "url(svg/my-hat2-hov.svg) 20 20, pointer",
       },
     },
   },

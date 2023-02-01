@@ -29,7 +29,8 @@ h1 {
 h2 {
   font-family: "pulpo-rust-75", serif;
   font-size: clamp(1.875rem, 1.4583rem + 1.7778vw, 3.125rem);
-  color: var(--accent-red);
+  color: white;
+  font-weight: 500;
 }
 h3 {
   font-family: "pulpo-rust-75", serif;
@@ -91,6 +92,48 @@ nav ul {
 }
 path:hover {
   fill: #a23c2e;
+}
+
+/*bg test*/
+/*
+.bg-animate {
+  width: 100%;
+
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(125, 52, 36, 0.538) 25%,
+    rgba(125, 100, 36, 0.498) 35%,
+    rgba(73, 42, 42, 0.474) 51%,
+    rgba(75, 42, 42, 0.484) 54%,
+    rgba(174, 125, 96, 0.46) 100%
+  );
+  animation: AnimateBG 15s ease infinite alternate;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}*/
+
+/*hover animation*/
+.hov-ani:hover {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ping {
+  65%,
+  80% {
+    transform: scale(1.5);
+    opacity: 0.3;
+  }
 }
 
 /*media queries for desktop*/
