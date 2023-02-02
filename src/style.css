@@ -180,9 +180,17 @@ path:hover {
   }
 }
 
+/* for mobile*/
+
 @media screen and (max-width: 768px) {
   .paper-bg {
     background-image: url(img/bg-mobile.webp);
     background-size: fill;
+  }
+  .bg-omoss {
+    width: 100%;
+    background-size: 150% 150%;
+    background-image: url(img/move-bg2.webp);
+    animation: AnimateBG 25s ease infinite;
   }
 }
