@@ -39,7 +39,7 @@ h3 {
 }
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
   color: var(--text-blue);
 }
@@ -95,20 +95,24 @@ path:hover {
 }
 
 /*bg test*/
-/*
 .bg-animate {
   width: 100%;
-
   background-size: 300% 300%;
   background-image: linear-gradient(
     -45deg,
-    rgba(125, 52, 36, 0.538) 25%,
-    rgba(125, 100, 36, 0.498) 35%,
-    rgba(73, 42, 42, 0.474) 51%,
+    rgba(125, 52, 36, 0.641) 25%,
+    rgba(125, 100, 36, 0.683) 35%,
+    rgba(73, 42, 42, 0.622) 51%,
     rgba(75, 42, 42, 0.484) 54%,
     rgba(174, 125, 96, 0.46) 100%
   );
   animation: AnimateBG 15s ease infinite alternate;
+}
+.bg-omoss {
+  width: 100%;
+  background-size: 200% 200%;
+  background-image: url(img/move-bg2.jpg);
+  animation: AnimateBG 25s ease infinite;
 }
 
 @keyframes AnimateBG {
@@ -121,7 +125,7 @@ path:hover {
   100% {
     background-position: 0% 50%;
   }
-}*/
+}
 
 /*hover animation*/
 .hov-ani:hover {
@@ -134,6 +138,32 @@ path:hover {
     transform: scale(1.5);
     opacity: 0.3;
   }
+}
+
+/*spin animation*/
+
+.myspin {
+  animation: spin 16s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*FADE IN*/
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1.5s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 /*media queries for desktop*/
