@@ -33,13 +33,14 @@ h2 {
   font-weight: 500;
 }
 h3 {
-  font-family: "pulpo-rust-75", serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   font-size: clamp(1.875rem, 1.6667rem + 0.8889vw, 2.5rem);
-  color: var(--accent-red);
+  color: var(--text-blue);
 }
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: clamp(1.125rem, 1.0833rem + 0.1778vw, 1.25rem);
   color: var(--text-blue);
 }
